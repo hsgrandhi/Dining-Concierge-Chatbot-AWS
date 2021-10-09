@@ -6,16 +6,8 @@ import json
 from decimal import *
 from urllib.parse import quote
 
-# connect to the dyanmoDB
-# client = boto3.resource(service_name='es',
-#                           aws_access_key_id="AKIAS5AMD4W7NKRGHLPA",
-#                           aws_secret_access_key="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",
-#                           region_name="us-east-1",
-#                          )
-
-API_KEY = "N4a5goKB-N1rpllBVMYv-yg5MkngautOAWU1aOGG7sRFxBanAoYAAe6cpJS92njJ2dB1b0cfy56nMv0TG8rf66O-Is1Vu74uyqJz08BgUXebZYEWP3ewXUaQvT9eYXYx"
-
-# API constants, you shouldn't have to change these.
+# yelp api details
+API_KEY = "YOUR YELP API KEY"
 API_HOST = 'https://api.yelp.com'
 SEARCH_PATH = '/v3/businesses/search'
 BUSINESS_PATH = '/v3/businesses/'  # Business ID will come after slash.
@@ -24,16 +16,6 @@ BUSINESS_PATH = '/v3/businesses/'  # Business ID will come after slash.
 DEFAULT_TERM = 'dinner'
 DEFAULT_LOCATION = 'manhattan'
 SEARCH_LIMIT = 50
-
-# host = 'https://search-restaurant-2xxoafusnhkyn4gmypsml2uzd4.us-east-1.es.amazonaws.com' # The domain with https:// and trailing slash. For example, https://my-test-domain.us-east-1.es.amazonaws.com/
-# path = 'restaurant' # the OpenSearch API endpoint
-# region = 'us-eat-1' # For example, us-west-1
-
-# service = 'es'
-# credentials = boto3.Session().get_credentials()
-# awsauth = AWS4Auth(credentials.access_key, credentials.secret_key, region, service, session_token=credentials.token)
-
-# url = host + path
 
 host = 'https://search-yelp-restaurants-domain-fisoghxvlz63b5skhjjsiixg4m.us-east-1.es.amazonaws.com'
 
