@@ -19,8 +19,8 @@ SEARCH_LIMIT = 50
 
 # connect to the dyanmoDB
 client = boto3.resource(service_name='dynamodb',
-                          aws_access_key_id="AKIAS5AMD4W7NKRGHLPA",
-                          aws_secret_access_key="6T9cNCCbRGGcnsHTDGCRtOBnkVAigVCy2TqzolUR",
+                          aws_access_key_id="YOUR ACESS KEY",
+                          aws_secret_access_key="YOUR SECRET KEY",
                           region_name="us-east-1",
                          )
 table = client.Table('yelp-restaurants')
